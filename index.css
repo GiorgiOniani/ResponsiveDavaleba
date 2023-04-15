@@ -1,0 +1,268 @@
+.nav-list a {
+    padding: 15px;
+}
+
+.asd {
+    height: 70px;
+}
+
+.sa {
+    font-size: 30px;
+    display: none;
+}
+
+.btn-main {
+    margin: 0 10px;
+    border: 0;
+    outline: 0;
+    background-color: #6C63FF;
+    color: white;
+    padding: 10px 20px;
+}
+
+.min-h-100 {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1260px;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    background-color: #efeeff;
+    align-items: center;
+    flex-wrap: wrap ;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    min-height: 50vh;
+}
+
+.column {
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.column .icons {
+    display: flex;
+    align-items: center;
+}
+
+.plan {
+    text-align: center;
+    font-size: 70px;
+}
+
+.column .icons i {
+    margin: 5px;
+    background-color: white;
+    box-shadow: 0 0 1px 0.1px rgb(36, 36, 36);
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-main:nth-child(1) {
+    background-color: transparent;
+    border: 2px solid #6C63FF;
+    color: #6C63FF;
+    font-weight: bold;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: gray;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.nav-list a::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 0;
+    background-color: #6C63FF;
+    width: 0;
+    height: 5px;
+    transition: 0.3s;
+
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+
+}
+
+.col-f1 h1 {
+    width: 80%;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 6rem;
+}
+
+.col-f1 p {
+    color: gray;
+    line-height: 45px;
+    font-size: 1.4rem;
+}
+
+.col-f1 button {
+    font-size: 1.3rem !important;
+}
+
+.active-barrr {
+    overflow: visible;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.de-active-bar {
+    overflow: hidden;
+    transition: 0.3s;
+    height: 0%;
+}
+
+.title h1 {
+    margin: 50px;
+    white-space: pre-wrap;
+    font-size: 4.5rem;
+    font-family: serif;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crd {
+    width: 400px;
+    height: 500px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #ECEBFF;
+}
+
+
+
+.crd button {
+    background-color: #ECEBFF;
+    border: 2px solid #6C63FF;
+    outline: 0;
+    color: #6C63FF;
+    padding: 15px;
+}
+
+.diff {
+    background-color: #6C63FF;
+    height: 600px;
+}
+
+.diff div {
+    color: white;
+
+}
+
+.crd div{
+    color: #717082;
+}
+
+.diff div{
+    color: white;
+}
+
+.diff h1 {
+    color: white;
+}
+
+.box {
+    width: 60%;
+    height: 300px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.box h1 {
+    font-family: serif;
+    color: white;
+    width: 30%;
+    font-size: 3.2rem;
+}
+
+.box div {
+    color: white;
+    background-color: #6C63FF;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+
+.diff button {
+    background-color: white;
+    color: #6C63FF;
+    padding: 15px 20px;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+}
+footer p{
+    color: #717082;
+}
+
+.fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.res {
+    background-color: white;
+}
+@media screen and (max-width:968px) {
+    .sa {
+        display: block;
+    }
+    .col-f1 h1 {
+        font-size: 3rem;    
+    }
+    .box {
+        width: 100%;
+        height: 50vh;
+        flex-wrap: wrap;
+    }
+
+    .box h1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .res {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .nav-list {
+        flex-direction: column !important;
+    }
+}
